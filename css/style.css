@@ -57,20 +57,28 @@ body {
 }
 
 .timer {
+	font-size: 1.3em;
 	top:0;
-	background-color: beige;
+	background-color: #fff;
+	height: 30px;
+	padding: 0.5% 0%;
 }
 
 .progress {
+	font-size: 1.3em;
 	bottom: 0;
-	background-color: aliceblue;
-	height: 60px;
+	background-color: #fff;
+	height: 30px;
+	padding: 0.5% 0%;
+	
 }
 
 /*    BANNER    */
+
 .banner {
 	margin-top: 25%;
 	background-color: pink;
+	overflow: hidden;
 }
 
 .banner h2 {
@@ -98,8 +106,9 @@ body {
 }
 
 .banner p {
+	font-size: 1.3em;
 	background-color: aquamarine;
-	padding-left: 10%;
+	padding: 4% 10%;
 }
 
 
@@ -114,17 +123,16 @@ section {display: none;}
 
 .firtssection {display: block;}
 
-.actuallbody h3 + p {height: 500px;}
-
 .actuallbody h3 {font-size: 2em;}
 
-.section1 {
-  height: 5000px;
-  background-color: rgb(69, 111, 225)
+.firtssection, .secondsection, .thirdsection, .foutrhsection, .fifthsection {
+	padding: 10% 0;
 }
 
-.firtssection, .secondsection, .thirdsection, .foutrhsection, .fifthsection {
-	
+section input {
+	width: 30px; 
+	height: 30px; 
+  
 }
 
 

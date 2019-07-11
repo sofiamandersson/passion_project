@@ -1,10 +1,16 @@
+/* --- START THE SESSION --- */
+
+
+
+
+
 /* --- SHOWING NEXT SECTION AND PROGRESS ON CLICK ---*/
 
 
 let sectionsShowing = [1, 0, 0, 0, 0];
 let sectionsAll = ['.firtssection', '.secondsection', '.thirdsection', '.foutrhsection', '.fifthsection'];
 let currentStep = document.querySelector('.currentStep');
-let stepDone = document.querySelector('section > h3');
+let checkCheckBox = document.querySelector('.checkbox');
 
 
 function showNextSection() {
@@ -22,17 +28,12 @@ function showNextSection() {
 			
 			if (i == sectionsShowing.length - 1) {
 				document.querySelector('.showNextSection').disabled = 'disabled';
-				currentStep.textContent = '5';
 				
 			} else {
 				sectionElements[i + 1].style.display = 'block';
 				sectionsShowing[i + 1] = 1;
 				currentStep.textContent = [i + 2];
-				
-				//stepDone[i + 1].style.textDecoration = 'line-through';
-				
-				/*-- not done --*/
-				//document.querySelector('section > h3').style.textDecoration = 'line-through';
+				checkCheckBox.checked = true;
 				
 			}
 			break;
@@ -63,11 +64,18 @@ let x2 = setInterval(function(){
 		document.querySelector('.myMinutes').innerText = Math.floor((myDistance % (myHour)) / (myMinute));
 		document.querySelector('.mySeconds').innerText = Math.floor((myDistance % (myMinute)) / mySecond);
 		
-		//do something later when date is reached
-      	//if (distance < 0) {
-		//  clearInterval(x);
-		//  'time is over!;
-		//}
+		if (myDistance < (myMinute*10)){
+			alert("Only 10 minutes left. Time to head to the final step and check out");
+		}
+
+		
+      	if (myDistance < 0) {
+			
+			document.querySelector('.myHours').innerText = 0;
+			document.querySelector('.myMinutes').innerText = 0;
+			document.querySelector('.mySeconds').innerText = 0;
+			
+		}
 	
 	}, mySecond)
 
@@ -75,7 +83,6 @@ let x2 = setInterval(function(){
 
 
 /*---------BELLOW IS FOR REFERENSE AND LEARNING-----------*/
-
 
 
 
