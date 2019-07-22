@@ -1,7 +1,9 @@
 /* --- START THE SESSION --- */
 
-
-
+//function showNextSection() {
+	
+	
+//}
 
 
 /* --- SHOWING NEXT SECTION AND PROGRESS ON CLICK ---*/
