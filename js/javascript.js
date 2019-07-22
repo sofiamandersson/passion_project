@@ -1,10 +1,3 @@
-/* --- START THE SESSION --- */
-
-//function showNextSection() {
-	
-	
-//}
-
 
 /* --- SHOWING NEXT SECTION AND PROGRESS ON CLICK ---*/
 
@@ -32,9 +25,12 @@ function showNextSection() {
 				document.querySelector('.showNextSection').disabled = 'disabled';
 				
 			} else {
+				//show next section
 				sectionElements[i + 1].style.display = 'block';
 				sectionsShowing[i + 1] = 1;
+				//show progress aka current step
 				currentStep.textContent = [i + 2];
+				//check mark when done -- NOT DONE --
 				checkCheckBox.checked = true;
 				
 			}
