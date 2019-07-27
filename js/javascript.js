@@ -22,7 +22,7 @@ function showNextSection() {
 			sectionsShowing[i] = 0;
 			
 			if (i == sectionsShowing.length - 1) {
-				document.querySelector('.showNextSection').disabled = 'disabled';
+				document.location.href = 'summary.html';
 				
 			} else {
 				//show next section
