@@ -24,10 +24,12 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {line-height: 1;}
+
 .actuallbody {
-	width: 50%;
+	width: 70%;
     margin: 0 auto;
 }
+
 ol, ul {list-style: none;}
 blockquote, q {quotes: none;}
 blockquote:before, blockquote:after, q:before, q:after {
@@ -45,6 +47,13 @@ body {
 	background-image: url("../images/bowie.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+}
+
+button {
+	background-color: aqua;
+	font-size: 1.3em;
+	height: 50px;
+	width: 75px;
 }
 
 /*   TIMER AND PROGRESS   */
@@ -65,13 +74,29 @@ body {
 	padding: 0.5% 0%;
 }
 
-.progress {
-	font-size: 1.3em;
+.progressbar {
+	margin: 5px auto;
+	width: 63%;
+}
+
+.progressbar span {
+	display: block;
+	float: left;
+	background-color: #ddd;
+	margin: 0 5px;
+	width: 150px;
+	height: 5px;
+}
+
+.progressbar span:nth-child(1){background-color: aqua;}
+
+.bottom {
 	bottom: 0;
-	background-color: #fff;
-	height: 30px;
-	padding: 0.5% 0%;
-	
+	padding: 0.5% 0%;	
+}
+
+.bottom button {
+
 }
 
 /*    BANNER    */
@@ -122,9 +147,10 @@ section {display: none;}
 
 section {
 	background-color: aliceblue;
-	margin: 10%;
+	margin: 5%;
 	padding: 5%;
-	border-radius: 20px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
 }
 
 section span{
@@ -132,9 +158,10 @@ section span{
 	text-align: center;
 	background-color: aqua;
     border-radius: 50%;
-    height: 36px;
-    width: 36px;
-	margin: -45px;
+	font-size: 55px;
+    height: 58px;
+    width: 58px;
+	margin: -65px;
 }
 
 .firtssection {display: block;}
