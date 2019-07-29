@@ -8,6 +8,8 @@ let currentStep = document.querySelector('.currentStep');
 let checkCheckBox = document.querySelector('.checkbox');
 
 
+document.querySelector(".disabled").disabled = true;
+
 function showNextSection() {
 	
 	let sectionElements = [];
@@ -33,11 +35,14 @@ function showNextSection() {
 				//check mark when done -- NOT DONE --
 				checkCheckBox.checked = true;
 				
+				
 			}
 			break;
 		}	
 	}	
 }
+
+
 
 console.table(sectionsAll);
 
