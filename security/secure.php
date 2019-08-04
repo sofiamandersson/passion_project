@@ -5,7 +5,7 @@ $pass = $_POST['pass'];
 if($user == "admin"
 && $pass == "admin")
 {
-        include("secure.html");
+        include("index.html");
 }
 else
 {
@@ -19,4 +19,4 @@ else
             </form>
     <?}
 }
-?>
+?

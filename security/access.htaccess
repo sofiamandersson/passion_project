@@ -1,0 +1,5 @@
+AuthName "Restricted Area" 
+AuthType Basic 
+AuthUserFile /https://sofiamandersson.github.io/passion_project//.htpasswd 
+AuthGroupFile /dev/null 
+require valid-user
