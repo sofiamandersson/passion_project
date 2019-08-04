@@ -30,7 +30,7 @@ body {line-height: 1;}
     margin: 0 auto;
 }
 
-ol, ul {list-style: none;}
+
 blockquote, q {quotes: none;}
 blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
@@ -47,6 +47,19 @@ body {
 	background-image: url("../images/bowie.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Roboto Slab', serif;
+
+}
+
+p, ul, li {
+	font-family: 'Roboto', serif;
+	font-size: 1.1em;
+	font-weight: 300;
+    line-height: 1.6em;
+	
 }
 
 button {
@@ -137,9 +150,9 @@ button {
 
 .timer {
 	font-size: 1.3em;
-	top:0;
+	top: 0;
 	background-color: #fff;
-	height: 30px;
+	height: 45px;
 	padding: 0.5% 0%;
 }
 
