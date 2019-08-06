@@ -177,19 +177,40 @@ button {
 .progressbar span:nth-child(1){background-color: #69c5ff;}
 
 .bottom {
+
 	bottom: 0;
+	left: 75%;
 	padding: 0.5% 0%;	
+	text-align: left;
 }
 
 .bottom button {
+	float: left;
+	margin: 200px 10px 0px 20px;
+}
 
+.guidesofia {
+	float: left;
+	width: 200px;
+}
+
+.guidesofia p {
+	color: #fff;
+	background-color: #69c5ff;
+}
+
+
+.guidesofia img {
+	height: 170px;
+	width: 170px;
+	border-radius: 50%;
 }
 
 /*    BANNER    */
 
 .banner {
 	margin-top: 25%;
-	background-color: pink;
+	background-color: #69c5ff;
 	overflow: hidden;
 }
 
@@ -217,15 +238,19 @@ button {
   	100% {left: 100%;}
 }
 
-.banner p {
+.banner p, .banner ul {
 	font-size: 1.3em;
-	background-color: #69c5ff;
-	padding: 4% 10%;
+	background-color: aliceblue;
+	padding: 10px 200px;
 }
 
+.banner ul {padding: 10px 250px;}
 
 
 /*   SECTIONS   */
+.firtssection {display: block;}
+
+.actuallbody h3 {font-size: 2em;}
 
 .actuallbody {padding-top: 50px;}
 
@@ -251,9 +276,10 @@ section span:nth-child(1) {
 	margin: -65px;
 }
 
-.firtssection {display: block;}
+section p {padding: 10px 0px;}
 
-.actuallbody h3 {font-size: 2em;}
+section ul {padding: 10px 0px 0px 50px;}
+
 
 
 
