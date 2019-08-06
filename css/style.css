@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
-p, ul, li {
+p, ul, ol, li {
 	font-family: 'Roboto', serif;
 	font-size: 1.1em;
 	font-weight: 300;
@@ -197,6 +197,26 @@ button {
 .guidesofia p {
 	color: #fff;
 	background-color: #69c5ff;
+	margin: 10px 0px;
+	padding: 10px;
+	position: relative;
+	border-radius: .4em;
+	font-size: 1em;
+}
+
+.guidesofia p:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #69c5ff;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
 }
 
 
@@ -238,7 +258,7 @@ button {
   	100% {left: 100%;}
 }
 
-.banner p, .banner ul {
+.banner p, .banner ol {
 	font-size: 1.3em;
 	background-color: aliceblue;
 	padding: 10px 200px;
@@ -278,7 +298,7 @@ section span:nth-child(1) {
 
 section p {padding: 10px 0px;}
 
-section ul {padding: 10px 0px 0px 50px;}
+section ol {padding: 10px 0px 0px 50px;}
 
 
 
