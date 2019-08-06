@@ -44,9 +44,11 @@ table {
 /**/
 
 body {
-	background-image: url("../images/bowie.jpg");
+	background-image: url("../images/bananas.JPG");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-position: top right;
+	background-color: #f8f1ee;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -63,8 +65,10 @@ p, ul, li {
 }
 
 button {
-	background-color: aqua;
+	color: #fff;
+	background-color: #69c5ff;
 	font-size: 1.3em;
+	border-radius: 5px;
 	height: 50px;
 	width: 75px;
 }
@@ -107,7 +111,7 @@ button {
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: aqua;
+  background-color: #69c5ff;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -170,7 +174,7 @@ button {
 	height: 5px;
 }
 
-.progressbar span:nth-child(1){background-color: aqua;}
+.progressbar span:nth-child(1){background-color: #69c5ff;}
 
 .bottom {
 	bottom: 0;
@@ -215,7 +219,7 @@ button {
 
 .banner p {
 	font-size: 1.3em;
-	background-color: aquamarine;
+	background-color: #69c5ff;
 	padding: 4% 10%;
 }
 
@@ -236,13 +240,14 @@ section {
 }
 
 section span:nth-child(1) {
+	color: #fff;
 	position: absolute;
 	text-align: center;
-	background-color: aqua;
+	background-color: #69c5ff;
     border-radius: 50%;
-	font-size: 55px;
-    height: 58px;
-    width: 58px;
+	font-size: 45px;
+    height: 53px;
+    width: 53px;
 	margin: -65px;
 }
 
