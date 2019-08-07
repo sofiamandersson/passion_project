@@ -235,6 +235,7 @@ button {
 }
 
 .banner h2 {
+	color: #fff;
 	font-size: 4em;
 	padding-left: 10%;
 	 position: relative;
@@ -258,7 +259,7 @@ button {
   	100% {left: 100%;}
 }
 
-.banner p, .banner ol {
+.banner p, .banner ul {
 	font-size: 1.3em;
 	background-color: aliceblue;
 	padding: 10px 200px;

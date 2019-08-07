@@ -1,14 +1,14 @@
 
-/* --- SHOWING NEXT SECTION AND PROGRESS ON CLICK ---*/
+/* --- SHOWING NEXT SECTION ---*/
 
 
 let sectionsShowing = [1, 0, 0, 0, 0];
 let sectionsAll = ['.firtssection', '.secondsection', '.thirdsection', '.foutrhsection', '.fifthsection'];
-let currentStep = document.querySelector('.currentStep');
-let checkCheckBox = document.querySelector('.checkbox');
 
-
-document.querySelector(".disabled").disabled = true;
+//let currentStep = document.querySelector('.currentStep');
+//check mark when done -- NOT DONE --
+//let checkCheckBox = document.querySelector('.checkbox');
+//document.querySelector(".disabled").disabled = true;
 
 function showNextSection() {
 	
@@ -30,17 +30,28 @@ function showNextSection() {
 				//show next section
 				sectionElements[i + 1].style.display = 'block';
 				sectionsShowing[i + 1] = 1;
-				//show progress aka current step
-				currentStep.textContent = [i + 2];
+				
+				//show progress aka current step 'x out of 5'
+				//currentStep.textContent = [i + 2];
 				//check mark when done -- NOT DONE --
-				checkCheckBox.checked = true;
-				
-				
+				//checkCheckBox.checked = true;
+			
 			}
 			break;
 		}	
 	}	
 }
+
+
+/* --- SHOWING PROGRESS ON CLICK ---*/
+
+let progressShowing = ['yellow', 'black', 'black', 'black', 'black'];
+let progressAll = ['.firstprogress', '.secondprogress', '.thirdprogress', '.fourthprogress', '.fifthprogress'];
+
+
+
+let progressBar = document.querySelector('.progressbar span');
+//progressBar.style.backgroundColor = '#4CAF50';
 
 
 
