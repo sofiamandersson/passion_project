@@ -25,12 +25,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {line-height: 1;}
 
-.actuallbody {
-	width: 70%;
-    margin: 0 auto;
-}
-
-
 blockquote, q {quotes: none;}
 blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
@@ -49,6 +43,12 @@ body {
 	background-attachment: fixed;
 	background-position: top right;
 	background-color: #f8f1ee;
+}
+
+.actuallbody {
+    margin: 0 auto;
+	width: 880px;
+	overflow: auto;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -73,6 +73,46 @@ button {
 	width: 75px;
 }
 
+a:link {
+  color: #69c5ff; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #69c5ff;
+}
+
+a:active {
+  color: #000;
+}
+
+/*--- LANDING PAGE ----*/
+
+.landingpage .actuallbody{
+	background-color: aliceblue;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+.tool {
+	width: 250px;
+	height: 170px;
+	background-color: #fff;
+	float: left;
+	margin: 21px;
+	border-radius: 5px;
+}
+
+.tool p {padding:10px;}
+
+
+
+/*--- CHECKBOXES ---*/
 .container {
   position: relative;
   padding-left: 35px;
