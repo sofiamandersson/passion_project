@@ -20,11 +20,8 @@ time, mark, audio, video {
 }
 
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+footer, header, hgroup, menu, nav, section {display: block;}
 body {line-height: 1;}
-
 blockquote, q {quotes: none;}
 blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
@@ -52,10 +49,7 @@ body {
 	overflow: auto;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-	font-family: 'Roboto Slab', serif;
-
-}
+h1, h2, h3, h4, h5, h6, p {font-family: 'Roboto Slab', serif;}
 
 p, ul, ol, li {
 	font-family: 'Roboto', serif;
@@ -165,31 +159,27 @@ footer p {
 	background-size: cover;
 }
 
-.tool p {padding:10px;}
+.tool h4 {
+	font-size: 1.2em;
+	text-align: center;
+	color: #fff;
+	background-color: #69c5ff;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	padding:10px;
+}
 
-.tool:nth-child(1){
-	background-image: url(../images/bananas.JPG);
-} 
+.tool:nth-child(1){background-image: url(../images/bananas.JPG);} 
 
-.tool:nth-child(3){
-	background-image: url(../images/people.JPG);
-} 
+.tool:nth-child(3){background-image: url(../images/people.JPG);} 
 
-.tool:nth-child(4){
-	background-image: url(../images/hand.JPG);
-} 
+.tool:nth-child(4){background-image: url(../images/hand.JPG);} 
 
-.tool:nth-child(5){
-	background-image: url(../images/backlove.JPG);
-} 
+.tool:nth-child(5){background-image: url(../images/backlove.JPG);}
 
-.tool:nth-child(6){
-	background-image: url(../images/feedbackstair.JPG);
-} 
+.tool:nth-child(6){background-image: url(../images/feedbackstair.JPG);}
 
-.tool:nth-child(7){
-	background-image: url(../images/ninja.JPG);
-} 
+.tool:nth-child(7){background-image: url(../images/ninja.JPG);}
 
 /*--- TOOL INTRO PAGE ----*/
 
