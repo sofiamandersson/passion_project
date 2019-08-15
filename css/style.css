@@ -49,7 +49,7 @@ body {
 	overflow: auto;
 }
 
-h1, h2, h3, h4, h5, h6, p {font-family: 'Roboto Slab', serif;}
+h1, h2, h3, h4, h5, h6, nav a {font-family: 'Roboto Slab', serif;}
 
 p, span, a, ul, ol, li, input {
 	font-family: 'Roboto', serif;
@@ -79,36 +79,36 @@ button:hover {
 }
 
 a:link {
-  color: #69c5ff; 
+
   text-decoration: none;
 }
 
 a:visited {
-  color: #000;
+
   text-decoration: none;
 }
 
 a:hover {
-  color: #69c5ff;
+
 }
 
 a:active {
-  color: #000;
-}
-
-nav {
-	background-color: rgba(240, 248, 255, 0.9);
-	text-align: right;
+  
 }
 
 nav a {
-
+	color: #fff;
+	padding: 10px;
+	text-shadow:1px 1px #69c5ff, 
+				2px 2px #69c5ff, 
+                3px 3px #69c5ff;
 }
 
 nav img {
 	width: 70px;
-	height: 70px;
-	text-align: left;
+	height: 30px;
+	padding: 10px 30px;
+	
 }
 
 footer {
