@@ -5,11 +5,6 @@
 let sectionsShowing = [1, 0, 0, 0, 0];
 let sectionsAll = ['.firtssection', '.secondsection', '.thirdsection', '.foutrhsection', '.fifthsection'];
 
-//let currentStep = document.querySelector('.currentStep');
-//check mark when done -- NOT DONE --
-//let checkCheckBox = document.querySelector('.checkbox');
-//document.querySelector(".disabled").disabled = true;
-
 function showNextSection() {
 	
 	let sectionElements = [];
@@ -31,17 +26,48 @@ function showNextSection() {
 				sectionElements[i + 1].style.display = 'block';
 				sectionsShowing[i + 1] = 1;
 				
-				//show progress aka current step 'x out of 5'
-				//currentStep.textContent = [i + 2];
-				//check mark when done -- NOT DONE --
-				//checkCheckBox.checked = true;
+				//hide privious section
+				sectionElements[i - 0].style.display = 'none';
 			
 			}
 			break;
 		}	
-	}	
+	}
 }
 
+
+/* --- back to SECTION before ---*/
+
+function showPreviousSection() {
+	
+	let sectionElements = [];
+	
+	for (var i = 0; i < sectionsAll.length; i++) {
+		sectionElements.push(document.querySelector(sectionsAll[i]))
+	}
+	
+	for (var i = 0; i < sectionsShowing.length; i++) {
+		
+		if (sectionsShowing[i] == 1) {
+			sectionsShowing[i] = 0;
+			
+			if (i == sectionsShowing.length - 5) {
+				document.location.href = 'tool.html';
+				
+			} else {
+				//show privious section
+				sectionElements[i - 1].style.display = 'block';
+				sectionsShowing[i - 1] = 1;
+				
+				//hide current section
+				sectionElements[i + 0].style.display = 'none';
+			
+			}
+			break;
+		}	
+	}
+	
+}
 
 /* --- SHOWING PROGRESS ON CLICK ---*/
 
@@ -97,6 +123,18 @@ let x2 = setInterval(function(){
 
 
 /*---------BELLOW IS FOR REFERENSE AND LEARNING-----------*/
+
+
+//let currentStep = document.querySelector('.currentStep');
+//check mark when done -- NOT DONE --
+//let checkCheckBox = document.querySelector('.checkbox');
+//document.querySelector(".disabled").disabled = true;
+
+
+				//show progress aka current step 'x out of 5'
+				//currentStep.textContent = [i + 2];
+				//check mark when done -- NOT DONE --
+				//checkCheckBox.checked = true;
 
 
 
