@@ -72,14 +72,34 @@ function showPreviousSection() {
 
 /* --- SHOWING PROGRESS ON CLICK ---*/
 
-let progressShowing = ['yellow', 'black', 'black', 'black', 'black'];
+let progressShowing = [1, 0, 0, 0, 0];
 let progressAll = ['.firstprogress', '.secondprogress', '.thirdprogress', '.fourthprogress', '.fifthprogress'];
 
-
-
-let progressBar = document.querySelector('.progressbar span');
-//progressBar.style.backgroundColor = '#4CAF50';
-
+function showProgress() {
+	
+	let progressElements = [];
+	
+	for (var i = 0; i < progressAll.length; i++){
+		progressElements.push(document.querySelector(progressAll[i]))
+	}
+	
+	for (var i = 0; i < progressShowing.length; i++) {
+		
+		if (progressShowing[i] == 1){
+			progressShowing[i] = 0;
+			
+			if (i == progressShowing.length - 1){
+				//do something?
+				
+			} else {
+				progressElements[i + 1].style.backgroundColor = "#69c5ff";
+				progressShowing[i + 1] = 1;
+				
+			}
+			break;
+		}
+	}
+}
 
 
 console.table(sectionsAll);
