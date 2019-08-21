@@ -52,6 +52,7 @@ function showPreviousSection() {
 			sectionsShowing[i] = 0;
 			
 			if (i == sectionsShowing.length - 5) {
+				//change to showing just first section instead of reloading page? 
 				document.location.href = 'tool.html';
 				
 			} else {
