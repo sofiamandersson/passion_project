@@ -1,4 +1,4 @@
-/* --- SHOWING NEXT SECTION ---*/
+/* --- SHOWING NEXT SECTION --- */
 
 let sectionsShowing = [1, 0, 0, 0, 0];
 let sectionsAll = ['.firtssection', '.secondsection', '.thirdsection', '.foutrhsection', '.fifthsection'];
@@ -8,7 +8,7 @@ function showNextSection() {
 	let sectionElements = [];
 	
 	for (var i = 0; i < sectionsAll.length; i++) {
-		sectionElements.push(document.querySelector(sectionsAll[i]))
+		sectionElements.push(document.querySelector(sectionsAll[i]));
 	}
 	
 	for (var i = 0; i < sectionsShowing.length; i++) {
@@ -26,14 +26,17 @@ function showNextSection() {
 				
 				//hide privious section
 				sectionElements[i - 0].style.display = 'none';
-			
+				
 			}
 			break;
 		}	
 	}
 }
 
-/* --- back to SECTION before ---*/
+	//sconsole.log('hej')
+	console.log(sectionsAll[3])
+
+/* --- BACK TO PREVIOUS SECTION ---*/
 
 function showPreviousSection() {
 	
@@ -67,17 +70,49 @@ function showPreviousSection() {
 	
 }
 
-/* ---- sofia guide content ---*/
+/* ---- SOFIA GUIDE ---*/
 
+let guideAll = ['.firsttip', '.secondtip', '.thirdtip', '.fourthtip', '.fifthtip'];
+
+
+	if (sectionsAll[3] == 1){
+		
+		console.log('hej')
+	
+	}
+
+
+
+/*
+
+let guideElements = [];
+
+guideElements.push(document.querySelector(guideAll[i]));
+
+guideElements[]
 
 if (document.querySelector('.secondsection').style.display == 'block' ){
 	console.log('hej');
 	
-	document.querySelector('.tip').innerHTML = 'fisk';
+	document.querySelector('.secondtip').style.display = 'block';
 }
+
+*/
 
 //console.log('hej');
 console.log(sectionsShowing);
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --- SHOW PROGRESS ON CLICK ---*/
 

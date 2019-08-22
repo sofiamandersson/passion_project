@@ -374,9 +374,14 @@ footer .followme {
 
 .bottom button:nth-child(2) {right: 10%;}
 
+
 .guidesofia {
 	float: right;
 	width: 200px;
+}
+
+.secondtip, .thirdtip, .fourthtip, .fifthtip {
+	display: none;
 }
 
 .guidesofia p {
@@ -403,7 +408,6 @@ footer .followme {
 	margin-left: -10px;
 	margin-bottom: -20px;
 }
-
 
 .guidesofia img {
 	height: 170px;
