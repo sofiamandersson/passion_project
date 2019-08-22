@@ -331,6 +331,15 @@ footer .followme {
 	text-align: center;
 }
 
+.hidetimer {
+	font-size: 0.6em;
+	width: 55px;
+	height: 35px;
+	position: absolute;
+	top: 13%;
+	right: 10%;
+}
+
 .progressbar {
 	margin: 5px auto;
 	width: 63%;

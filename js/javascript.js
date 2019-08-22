@@ -1,6 +1,4 @@
-
 /* --- SHOWING NEXT SECTION ---*/
-
 
 let sectionsShowing = [1, 0, 0, 0, 0];
 let sectionsAll = ['.firtssection', '.secondsection', '.thirdsection', '.foutrhsection', '.fifthsection'];
@@ -34,7 +32,6 @@ function showNextSection() {
 		}	
 	}
 }
-
 
 /* --- back to SECTION before ---*/
 
@@ -70,7 +67,19 @@ function showPreviousSection() {
 	
 }
 
-/* --- SHOWING PROGRESS ON CLICK ---*/
+/* ---- sofia guide content ---*/
+
+
+if (document.querySelector('.secondsection').style.display == 'block' ){
+	console.log('hej');
+	
+	document.querySelector('.tip').innerHTML = 'fisk';
+}
+
+//console.log('hej');
+console.log(sectionsShowing);
+
+/* --- SHOW PROGRESS ON CLICK ---*/
 
 let progressShowing = [1, 0, 0, 0, 0];
 let progressAll = ['.firstprogress', '.secondprogress', '.thirdprogress', '.fourthprogress', '.fifthprogress'];
@@ -100,11 +109,6 @@ function showProgress() {
 		}
 	}
 }
-
-
-console.table(sectionsAll);
-
-
 
 /*-- 1,5 COUNT DOWN TIMER -- */
 
@@ -140,8 +144,28 @@ let x2 = setInterval(function(){
 	
 	}, mySecond)
 
+/*-- HIDE TIMER -- */
 
-
+function hideTimer() {
+	
+	//document.querySelector(".hidetimer").innerText = 'Show timer';
+	
+	
+	var timerButtonText = document.querySelector('.hidetimer');
+	var actuallTimer = document.querySelector('.actualltimer');
+	
+	if (timerButtonText.innerHTML == 'Hide Timer') {
+		timerButtonText.innerHTML = 'Show Timer';
+		actuallTimer.style.visibility = 'visible';
+		
+		
+	} else {
+		timerButtonText.innerHTML = 'Hide Timer';
+		actuallTimer.style.visibility = 'hidden';
+	}
+	
+	
+}
 
 /*---------BELLOW IS FOR REFERENSE AND LEARNING-----------*/
 
