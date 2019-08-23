@@ -35,7 +35,7 @@ function showNextSection() {
 
 	//sconsole.log('hej')
 	console.log(sectionsAll[3])
-
+	
 /* --- BACK TO PREVIOUS SECTION ---*/
 
 function showPreviousSection() {

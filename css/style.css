@@ -35,11 +35,12 @@ table {
 /**/
 
 body {
-	background-image: url("../images/bananas.JPG");
+	background-image: url("../images/hand.JPG");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: top right;
-	background-color: #f8f1ee;
+	background-color: #f1d442;
+	background-size: 100vh;
 }
 
 .actuallbody {
@@ -174,14 +175,14 @@ footer .followme {
 
 .banner ul {padding: 10px 250px;}
 
-.landingpage .actuallbody, .toolintro .actuallbody, .summary .actuallbody, .about .actuallbody, .services .actuallbody {
+.landingpage .actuallbody, .library .actuallbody, .toolintro .actuallbody, .summary .actuallbody, .about .actuallbody, .services .actuallbody {
 	background-color: rgba(240, 248, 255, 1);;
 	margin-top: 120px;
 	margin-bottom: 20px;
 	border-radius: 5px;
 }
 
-.landingpage .actuallbody p, .toolintro .actuallbody p, .summary .actuallbody p, .about .actuallbody p, .services .actuallbody p {padding: 3% 5%;}
+.landingpage .actuallbody p, .library .actuallbody p, .toolintro .actuallbody p, .summary .actuallbody p, .about .actuallbody p, .services .actuallbody p {padding: 3% 5%;}
 
 .tool {
 	position: relative;
