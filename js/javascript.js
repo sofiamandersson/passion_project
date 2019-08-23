@@ -136,7 +136,7 @@ function showProgress() {
 				//do something?
 				
 			} else {
-				progressElements[i + 1].style.backgroundColor = "#69c5ff";
+				progressElements[i + 1].style.backgroundColor = "#f1582e";
 				progressShowing[i + 1] = 1;
 				
 			}
