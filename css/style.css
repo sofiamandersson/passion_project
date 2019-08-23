@@ -189,8 +189,7 @@ footer .followme, footer .contactme {
 .banner p, .banner ul {
 	text-align: center;
 	font-size: 1.3em;
-	color: #fff;
-	background-color: rgba(0, 0, 0, 0.8);
+
 	padding:40px 200px;
 }
 
