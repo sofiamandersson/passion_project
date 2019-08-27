@@ -41,6 +41,8 @@ body {
 	background-position: top right;
 	background-color: #f1d442;
 	background-size: 100vh;
+	
+	
 }
 
 .actuallbody {
@@ -67,6 +69,11 @@ button {
 	border-radius: 5px;
 	height: 50px;
 	width: 75px;
+	border: 0px;
+}
+
+button:hover {
+	cursor: pointer;
 }
 
 /*
@@ -163,7 +170,7 @@ footer .followme, footer .contactme {
 	color: #fff;
 	font-size: 4em;
 	padding-left: 10%;
-	 position: relative;
+	position: relative;
 	background-color: #f1582e;
   /*	-webkit-animation-name: bannerAnimation; 
   	-webkit-animation-duration: 10s;
@@ -185,17 +192,29 @@ footer .followme, footer .contactme {
   	100% {left: 100%;}
 }
 
-.banner p, .banner ul {
+.banner p {
 	text-align: center;
-	font-size: 1.3em;
-
-	padding:40px 200px;
+	font-size: 1.7em;
+	padding: 20px 100px;
+	background-color: #f1d442;
+	width: 43%;
+	margin: 40px auto;
 }
+/*
+.banner p span {
+	background-image: linear-gradient(120deg, #f1582e 0%, #f1d442 100%);
+  	background-repeat: no-repeat;
+  	background-size: 100% 0.8em;
+  	background-position: 0 88%;
+  	transition: background-size 0.25s ease-in;
 
-.banner ul {padding: 10px 250px;}
+}*/
 
 .banner button {
 	width: 250px;
+	font-size: 0.9em;
+	margin-top: 40px;
+
 }
 
 .landingpage .actuallbody, .library .actuallbody, .toolintro .actuallbody, .summary .actuallbody, .about .actuallbody, .services .actuallbody {
@@ -473,11 +492,15 @@ section span:nth-child(1) {
 	
 }
 
+section i {font-size: 0.8em;}
+
 section p {padding: 10px 0px;}
 
 section ol{padding: 10px 0px 0px 50px;}
 
-section ol li {padding: 10px 0px;}
+section ol li {padding: 10px 0px; }
+
+section ol li:before {color: #e75204;}
 
 section ul {
 	padding: 3px 0px 0px 150px;
@@ -485,6 +508,32 @@ section ul {
 }
 
 section ul li {padding: 5px 0px;}
+
+section .thehand {
+	border: 1px solid #e75204;
+	border-radius: 5px;
+	width: 78%;
+    margin: 0 auto;
+	padding: 10px;
+}
+
+/*
+
+ol li {
+  counter-increment: list;
+  list-style-type: none;
+  position: relative;
+}
+
+ol li:before {
+  color: #e75204;
+  content: counter(list) ".";
+  left:-32px;
+  position: absolute;
+  text-align: right;
+  width: 26px;
+} */
+
 
 
 /*---   SUMMARY page  ---*/
