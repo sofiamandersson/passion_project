@@ -76,7 +76,7 @@ button:hover {
 	cursor: pointer;
 }
 
-/*
+/* 
 button:hover {
 	position: relative;
 	top: -3px; 
@@ -120,25 +120,23 @@ nav img {
 
 nav a:nth-child(1):hover {border-bottom: 0px;}
 
+.tagline{
+	margin-top: 10vh;
+	font-size: 2em;
+	padding: 50px 0;
+	background-color: #f6f6f4;
+	text-align: center;
+}
+
+
 footer {
 	width: 100%;
-	height: 350px;
-	margin-top: 180px;
-	padding-top: 100px;
+	padding-top: 50px;
 	color: #000;
 	background-color: #f1d442;
 	bottom: 0;
 	border-top: 1px solid;
 	overflow: hidden;
-}
-
-footer p {
-	text-align: center;
-}
-
-footer .tagline{
-	font-size: 2em;
-	padding-bottom: 40px;
 }
 
 .oneline {
@@ -156,15 +154,16 @@ footer .followme, footer .contactme {
 /*--- LANDING PAGE ----*/
 
 .banner {
-	margin-top: 12%;
+	margin-top: 10vh;
 	/*background-color: #8ce3c9;*/
 	/*background-color: #f1582e;
 	/*background-color: #f1124d;*/
 	/*background-color: #7028e2;*/
 	overflow: hidden;
+	
 }
 
-.landingpage .banner {margin-top: 25%;}
+.landingpage .banner {margin-top: 30vh;}
 
 .banner h2 {
 	color: #fff;
@@ -196,9 +195,10 @@ footer .followme, footer .contactme {
 	text-align: center;
 	font-size: 1.7em;
 	padding: 20px 100px;
-	background-color: #f1d442;
+	background-color: #f6f6f4;
 	width: 43%;
 	margin: 40px auto;
+	border-radius: 5px;
 }
 /*
 .banner p span {
