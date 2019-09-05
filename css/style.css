@@ -63,17 +63,23 @@ p, span, a, ul, ol, li, input, nav {
 }
 
 button {
-	color: #fff;
-	background-color: #f1582e;
+	color: #f1582e;
+	background-color: #f6f6f4;
+	border: 1px solid #f1582e;
 	font-size: 1.3em;
 	border-radius: 5px;
 	height: 50px;
 	width: 75px;
-	border: 0px;
 }
 
 button:hover {
 	cursor: pointer;
+	color: #fff;
+	background-color: #f1582e;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition:    all 0.2s ease-out;
+	-ms-transition:     all 0.2s ease-out;
+	-o-transition:      all 0.2s ease-out;
 }
 
 /* 
@@ -223,9 +229,8 @@ footer .followme, footer .contactme {
 	margin-top: 120px;
 	margin-bottom: 20px;
 	border-radius: 5px;
+	padding: 3% 5%;
 }
-
-.landingpage .actuallbody p, .library .actuallbody p, .toolintro .actuallbody p, .summary .actuallbody p, .about .actuallbody p, .services .actuallbody p {padding: 3% 5%;}
 
 .tool {
 	position: relative;
