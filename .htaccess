@@ -1,5 +1,0 @@
- AuthUserFile /https://sofiamandersson.github.io/passion_project/.htpasswd 
- AuthGroupFile /dev/null 
- AuthName "Ziggy Stardust and the Spiders from Mars" 
- AuthType Basic 
- require valid-user 
