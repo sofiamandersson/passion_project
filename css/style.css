@@ -28,7 +28,6 @@ blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -125,7 +124,7 @@ nav img {
 
 nav a:nth-child(1):hover {border-bottom: 0px;}
 
-.tagline {
+.tagline{
 	margin-top: 10vh;
 	font-size: 2em;
 	padding: 50px 0;
@@ -575,7 +574,7 @@ form input {
 	padding: 7px;
 }
 
-form input:nth-child(1) {width: 44%;}
+form input:nth-child(1){width: 44%;}
 
 form input:nth-child(2){
 	width: 44%;
@@ -585,7 +584,6 @@ form input:nth-child(2){
 form input:nth-child(3){width: 95%;}
 
 form button {width: 100%;}
-
 
 /*---  ANPASSNING  ---*/
 @media screen and (max-width: 1023px) {
