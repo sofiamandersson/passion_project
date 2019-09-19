@@ -30,5 +30,5 @@ Pretty much secure, please consider that:
 
 ## Troubleshooting
 
-0. Test the [demo page](http://matteobrusa.github.io/Password-protection-for-static-pages/) in your browser with password 'jagvillse'
+0. Test the [demo page](http://matteobrusa.github.io/Password-protection-for-static-pages/) in your browser with password 'secret'
 0. Deploy the whole repo on your hosting, and test again.
