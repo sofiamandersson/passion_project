@@ -333,10 +333,19 @@ footer .followme, footer .contactme {
 
 .toolintro .actuallbody {overflow: hidden;}
 
-.toolintro ul {padding-left: 70px;}
-
 .toolintro .guidesofia {float: right;}
 
+.toolintro .actuallbody p {
+    padding: 10px 0px;
+}
+
+.toolintro .actuallbody ul {
+    padding: 10px 0px 0px 70px;
+}
+
+.toolintro .actuallbody ul li {
+    padding: 10px 0px;
+}
 /*---   TOOL PAGE  ---*/
 
 .firtssection {display: block;}
@@ -558,6 +567,19 @@ ol li:before {
 	height: 170px;
 	width: 170px;
 	border-radius: 50%;
+}
+
+
+/*--   Menti   --*/
+
+.menti {
+	position: relative; 
+	padding-bottom: 56.25%; 
+	padding-top: 35px; 
+	height: 0; 
+	overflow: hidden;
+	border: 1px solid #f1582e;
+	border-radius: 5px;
 }
 
 /*---   SUMMARY page  ---*/
