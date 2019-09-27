@@ -28,7 +28,6 @@ blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -125,7 +124,7 @@ nav img {
 
 nav a:nth-child(1):hover {border-bottom: 0px;}
 
-.tagline {
+.tagline{
 	margin-top: 10vh;
 	font-size: 2em;
 	padding: 50px 0;
@@ -334,10 +333,19 @@ footer .followme, footer .contactme {
 
 .toolintro .actuallbody {overflow: hidden;}
 
-.toolintro ul {padding-left: 70px;}
-
 .toolintro .guidesofia {float: right;}
 
+.toolintro .actuallbody p {
+    padding: 10px 0px;
+}
+
+.toolintro .actuallbody ul {
+    padding: 10px 0px 0px 70px;
+}
+
+.toolintro .actuallbody ul li {
+    padding: 10px 0px;
+}
 /*---   TOOL PAGE  ---*/
 
 .firtssection {display: block;}
@@ -561,6 +569,19 @@ ol li:before {
 	border-radius: 50%;
 }
 
+
+/*--   Menti   --*/
+
+.menti {
+	position: relative; 
+	padding-bottom: 56.25%; 
+	padding-top: 35px; 
+	height: 0; 
+	overflow: hidden;
+	border: 1px solid #f1582e;
+	border-radius: 5px;
+}
+
 /*---   SUMMARY page  ---*/
 
 form {
@@ -575,7 +596,7 @@ form input {
 	padding: 7px;
 }
 
-form input:nth-child(1) {width: 44%;}
+form input:nth-child(1){width: 44%;}
 
 form input:nth-child(2){
 	width: 44%;
@@ -585,7 +606,6 @@ form input:nth-child(2){
 form input:nth-child(3){width: 95%;}
 
 form button {width: 100%;}
-
 
 /*---  ANPASSNING  ---*/
 @media screen and (max-width: 1023px) {
