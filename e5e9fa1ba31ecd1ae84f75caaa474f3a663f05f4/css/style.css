@@ -418,7 +418,8 @@ ol li:before {
 } */
 
 
-/*--- CHECKBOXES ---*/
+/*--- CHECKBOXES ---        NOT SURE IF ILL USE THIS - MAYBE REMOVE CODE?
+
 .container {
   position: relative;
   padding-left: 35px;
@@ -472,7 +473,7 @@ ol li:before {
   transform: rotate(45deg);
 }
 
-
+*/
 /*---   TIMER AND PROGRESS   ---*/
 
 .overlaymenu {
