@@ -47,7 +47,7 @@ body {
 .actuallbody {
 	position: relative;
     margin: 0 auto;
-	width: 880px;
+	width: 100%;
 	overflow: auto;
 }
 
@@ -361,6 +361,7 @@ section {
 	margin: 5%;
 	padding: 5%;
 	border-radius: 5px;
+	width: 40%;
 }
 
 section span:nth-child(1) {
@@ -574,13 +575,17 @@ ol li:before {
 /*--   Menti   --*/
 
 .menti {
-	position: relative; 
+	position: absolute; 
 	padding-bottom: 56.25%; 
 	padding-top: 35px; 
-	height: 0; 
+	margin: 10%;
 	overflow: hidden;
 	border: 1px solid #f1582e;
 	border-radius: 5px;
+	width: 40%;
+	height: 200px; 
+	right: 0;
+	top: 0;
 }
 
 /*---   SUMMARY page  ---*/
