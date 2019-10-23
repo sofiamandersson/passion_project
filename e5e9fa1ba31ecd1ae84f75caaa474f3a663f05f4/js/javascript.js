@@ -1,3 +1,4 @@
+
 /* --- SHOWING NEXT SECTION --- */
 
 let sectionsShowing = [1, 0, 0, 0, 0];
@@ -33,8 +34,14 @@ function showNextSection() {
 	}
 }
 
+
+
 	//sconsole.log('hej')
 	console.log(sectionsAll[3])
+	
+	console.log(sectionsAll[0] == 1)
+	
+	
 	
 /* --- BACK TO PREVIOUS SECTION ---*/
 
@@ -71,46 +78,6 @@ function showPreviousSection() {
 }
 
 /* ---- SOFIA GUIDE ---*/
-
-let guideAll = ['.firsttip', '.secondtip', '.thirdtip', '.fourthtip', '.fifthtip'];
-
-
-	if (sectionsAll[3] == 1){
-		
-		console.log('hej')
-	
-	}
-
-
-
-/*
-
-let guideElements = [];
-
-guideElements.push(document.querySelector(guideAll[i]));
-
-guideElements[]
-
-if (document.querySelector('.secondsection').style.display == 'block' ){
-	console.log('hej');
-	
-	document.querySelector('.secondtip').style.display = 'block';
-}
-
-*/
-
-//console.log('hej');
-console.log(sectionsShowing);
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -202,6 +169,35 @@ function hideTimer() {
 	
 }
 
+
+/*---- MODAL ----*/
+
+
+	
+	
+	
+
+
+	var modal = document.querySelector(".modal");
+    var trigger = document.querySelector(".trigger");
+    var closeButton = document.querySelector(".close-button");
+
+    function toggleModal() {
+        modal.classList.toggle("show-modal");
+    }
+
+    function windowOnClick(event) {
+        if (event.target === modal) {
+            toggleModal();
+        }
+    }
+
+    trigger.addEventListener("click", toggleModal);
+    closeButton.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+
+
+
 /*---------BELLOW IS FOR REFERENSE AND LEARNING-----------*/
 
 
@@ -230,5 +226,6 @@ window.addEventListener('scroll', () => {
 */
 
 /*------*/
+
 
 
