@@ -172,30 +172,47 @@ function hideTimer() {
 
 /*---- MODAL ----*/
 
-
-	
-	
 	
 
 
-	var modal = document.querySelector(".modal");
-    var trigger = document.querySelector(".trigger");
-    var closeButton = document.querySelector(".close-button");
+	var modal = document.querySelector('.modal');
+    var trigger = document.querySelector('.trigger');
+    var closeButton = document.querySelector('.close-button');
+
+
+
 
     function toggleModal() {
-        modal.classList.toggle("show-modal");
+        modal.classList.toggle('show-modal');
+	
+		
     }
 
-    function windowOnClick(event) {
-        if (event.target === modal) {
+	function closeModal() {
+		if (event.target === modal) {
             toggleModal();
         }
+	}
+
+
+    function windowOnClick(event) {
+       
+		if (sectionsShowing[1] == 1) {
+			toggleModal();
+		}
+		
+		if (sectionsShowing[3] == 1) {
+			toggleModal();
+		}
+		
+		
+		
+
     }
 
-    trigger.addEventListener("click", toggleModal);
-    closeButton.addEventListener("click", toggleModal);
-    window.addEventListener("click", windowOnClick);
-
+    trigger.addEventListener('click', toggleModal);
+    closeButton.addEventListener('click', closeModal);
+    window.addEventListener('click', windowOnClick);
 
 
 /*---------BELLOW IS FOR REFERENSE AND LEARNING-----------*/
