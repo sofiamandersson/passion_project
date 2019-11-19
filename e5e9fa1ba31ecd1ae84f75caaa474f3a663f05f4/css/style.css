@@ -392,6 +392,14 @@ section span:nth-child(1) {
 	margin: -85px;
 }
 
+.actualltool .actuallbody section {}
+
+.actualltool .actuallbody section img {
+	width: 50%;
+	float: right;
+}
+
+
 section i {font-size: 0.8em;}
 
 section p {padding: 10px 0px;}
