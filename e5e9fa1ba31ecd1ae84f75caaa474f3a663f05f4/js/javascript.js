@@ -32,7 +32,15 @@ function showNextSection() {
 			break;
 		}	
 	}
-}	
+}
+
+
+
+	//sconsole.log('hej')
+	console.log(sectionsAll[3])
+	
+	console.log(sectionsAll[0] == 1)
+	
 	
 	
 /* --- BACK TO PREVIOUS SECTION ---*/
@@ -69,6 +77,9 @@ function showPreviousSection() {
 	
 }
 
+/* ---- SOFIA GUIDE ---*/
+
+
 
 /* --- SHOW PROGRESS ON CLICK ---*/
 
@@ -100,48 +111,6 @@ function showProgress() {
 		}
 	}
 }
-
-
-/*---- MODAL ----*/
-
-	
-var modal = document.querySelector('.modal');
-var trigger = document.querySelector('.trigger');
-var closeButton = document.querySelector('.close-button');
-
-var ppp = document.querySelector('.ppp');
-var imessage = document.querySelector('.imessage');
-
-
-function toggleModal() {
-        modal.classList.toggle('show-modal');
- }
-
-function closeModal() {
-	if (event.target === modal) {
-		toggleModal();
-    }
-}
-
-function windowOnClick(event) {
-       
-	if (sectionsShowing[1] == 1) {
-		toggleModal();
-		imessage.style.display = 'none';
-		ppp.style.display = 'block';
-	}
-		
-	if (sectionsShowing[3] == 1) {
-		toggleModal();
-		imessage.style.display = 'block';
-		ppp.style.display = 'none';
-	}
-}
-
-trigger.addEventListener('click', toggleModal);
-closeButton.addEventListener('click', closeModal);
-window.addEventListener('click', windowOnClick);
-
 
 /*-- 1,5 COUNT DOWN TIMER -- */
 
@@ -196,5 +165,80 @@ function hideTimer() {
 		timerButtonText.innerHTML = 'Hide Timer';
 		actuallTimer.style.visibility = 'hidden';
 	}
-
+	
+	
 }
+
+
+/*---- MODAL ----*/
+
+	
+var modal = document.querySelector('.modal');
+var trigger = document.querySelector('.trigger');
+var closeButton = document.querySelector('.close-button');
+
+var ppp = document.querySelector('.ppp');
+var imessage = document.querySelector('.imessage');
+
+
+function toggleModal() {
+        modal.classList.toggle('show-modal');
+ }
+
+function closeModal() {
+	if (event.target === modal) {
+		toggleModal();
+    }
+}
+
+function windowOnClick(event) {
+       
+	if (sectionsShowing[1] == 1) {
+		toggleModal();
+		imessage.style.display = 'none';
+		ppp.style.display = 'block';
+	}
+		
+	if (sectionsShowing[3] == 1) {
+		toggleModal();
+		imessage.style.display = 'block';
+		ppp.style.display = 'none';
+	}
+}
+
+trigger.addEventListener('click', toggleModal);
+closeButton.addEventListener('click', closeModal);
+window.addEventListener('click', windowOnClick);
+
+
+/*---------BELLOW IS FOR REFERENSE AND LEARNING-----------*/
+
+
+//let currentStep = document.querySelector('.currentStep');
+//check mark when done -- NOT DONE --
+//let checkCheckBox = document.querySelector('.checkbox');
+//document.querySelector(".disabled").disabled = true;
+
+
+				//show progress aka current step 'x out of 5'
+				//currentStep.textContent = [i + 2];
+				//check mark when done -- NOT DONE --
+				//checkCheckBox.checked = true;
+
+
+
+/*
+const [red, green, blue] = [69, 111, 225]
+const section1 = document.querySelector('.section1')
+
+window.addEventListener('scroll', () => {
+  const y = 1 + (window.scrollY || window.pageYOffset) / 150
+  const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+  section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+})
+*/
+
+/*------*/
+
+
+

@@ -231,10 +231,18 @@ footer .followme, footer .contactme {
 /*--- ABOUT PAGE ----*/
 
 
-
+.about .actuallbody {
+	overflow: hidden;
+	width: 70%;;
+}
 
 
 /*--- SERVICES PAGE ----*/
+
+.services .actuallbody {
+	overflow: hidden;
+	width: 70%;;
+}
 
 .elevatorpitch, .fisk {
 	font-size: 2em;
@@ -267,6 +275,11 @@ footer .followme, footer .contactme {
 .actuallbody .flipback {transform: rotate(0deg);}
 
 /*--- LIBRARY PAGE ----*/
+
+.library .actuallbody {
+	overflow: hidden;
+	width: 63%;;
+}
 
 .tool {
 	position: relative;
@@ -331,7 +344,10 @@ footer .followme, footer .contactme {
 
 /*--- TOOL INTRO PAGE ----*/
 
-.toolintro .actuallbody {overflow: hidden;}
+.toolintro .actuallbody {
+	overflow: hidden;
+	width: 70%;;
+}
 
 .toolintro .guidesofia {float: right;}
 
@@ -638,6 +654,11 @@ ol li:before {
 
 
 /*---   SUMMARY page  ---*/
+
+.summary .actuallbody {
+	overflow: hidden;
+	width: 70%;;
+}
 
 form {
 	width: 400px;
