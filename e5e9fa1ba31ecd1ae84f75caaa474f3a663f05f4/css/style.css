@@ -349,6 +349,11 @@ footer .followme, footer .contactme {
 	width: 70%;;
 }
 
+.toolintro .actuallbody img {
+	float: right;
+	width: 20%;
+}
+
 .toolintro .guidesofia {float: right;}
 
 .toolintro .actuallbody p {
@@ -396,7 +401,26 @@ section span:nth-child(1) {
 
 .actualltool .actuallbody section img {
 	width: 50%;
+	padding: 2%;
 	float: right;
+}
+
+.actualltool .actuallbody .firtssection img {
+	width: 35%;
+}
+
+.actualltool .actuallbody .secondsection img {
+	margin-top: -8%;
+}
+
+
+.actualltool .actuallbody .foutrhsection img {
+	margin-top: -10%;
+	padding: 0%;
+}
+
+.actualltool .actuallbody .fifthsection img {
+	margin-top: -6%;
 }
 
 
@@ -527,7 +551,7 @@ ol li:before {
 
 .progressbar {
 	margin: 0 auto;
-	width: 860px;
+	width: 90%;
 }
 
 .progressbar span {
@@ -560,7 +584,7 @@ ol li:before {
 .guidesofia {
 	position: absolute;
 	width: 170px;
-	bottom: 5%;
+	top: 24%;
 	right: 0;
 }
 
@@ -592,8 +616,8 @@ ol li:before {
 }
 
 .guidesofia img {
-	height: 170px;
-	width: 170px;
+	height: 150px;
+	width: 150px;
 	border-radius: 50%;
 }
 

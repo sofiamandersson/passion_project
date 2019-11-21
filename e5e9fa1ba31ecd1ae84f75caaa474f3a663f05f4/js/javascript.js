@@ -193,13 +193,13 @@ function closeModal() {
 
 function windowOnClick(event) {
        
-	if (sectionsShowing[1] == 1) {
+	/*if (sectionsShowing[1] == 1) {
 		toggleModal();
 		imessage.style.display = 'none';
 		ppp.style.display = 'block';
-	}
+	}*/
 		
-	if (sectionsShowing[3] == 1) {
+	if (sectionsShowing[2] == 1) {
 		toggleModal();
 		imessage.style.display = 'block';
 		ppp.style.display = 'none';
