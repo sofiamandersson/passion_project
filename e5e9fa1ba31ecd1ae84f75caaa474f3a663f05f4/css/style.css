@@ -430,7 +430,7 @@ section p {padding: 10px 0px;}
 
 section ol{padding: 10px 0px 0px 50px;}
 
-section ol li {padding: 10px 0px; }
+section ol li {padding: 10px 0px;}
 
 section ol li:before {color: #e75204;}
 
@@ -447,6 +447,22 @@ section .thehand {
 	width: 78%;
     margin: 0 auto;
 	padding: 10px;
+}
+
+ol li {
+  counter-increment: list;
+  list-style-type: none;
+  position: relative;
+}
+
+
+ol li:before {
+  color: #e75204;
+  content: counter(list) ".";
+  left:-32px;
+  position: absolute;
+  text-align: right;
+  width: 26px;
 }
 
 /*
