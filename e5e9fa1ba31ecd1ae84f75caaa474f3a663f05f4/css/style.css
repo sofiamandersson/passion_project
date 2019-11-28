@@ -677,7 +677,7 @@ ol li:before {
         transform: translate(-50%, -50%);
         background-color: white;
         padding: 1rem 1.5rem;
-        width: 24rem;
+        width: 40rem;
         border-radius: 0.5rem;
     }
     .close-button {
@@ -698,6 +698,10 @@ ol li:before {
         transform: scale(1.0);
         transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     }
+
+.modal-content img {
+	width: 80%;
+}
 
 
 
