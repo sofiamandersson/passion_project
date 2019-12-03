@@ -24,6 +24,9 @@ footer, header, hgroup, menu, nav, section {display: block;}
 body {line-height: 1;}
 blockquote, q {quotes: none;}
 
+i {font-style: italic;}
+
+
 blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
@@ -410,7 +413,7 @@ section span:nth-child(1) {
 }
 
 .actualltool .actuallbody .secondsection img {
-	margin-top: -8%;
+	margin-top: 2%;
 }
 
 
@@ -684,6 +687,7 @@ ol li:before {
         width: 40rem;
         border-radius: 0.5rem;
     }
+
     .close-button {
         float: right;
         width: 1.5rem;
@@ -703,11 +707,18 @@ ol li:before {
         transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     }
 
-.modal-content img {
-	width: 80%;
+.modal-content h1 {
+	font-size: 1.5em;
 }
 
+.modal-content img {
+	width: 95%;
+	padding: 2%;
+}
 
+.modal-content p {
+	padding: 1%;
+}
 
 /*---   SUMMARY page  ---*/
 
