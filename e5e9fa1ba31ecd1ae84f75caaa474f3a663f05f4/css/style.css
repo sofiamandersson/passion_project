@@ -556,7 +556,7 @@ ol li:before {
 	text-align: center;
 }
 
-.hidetimer {
+.hidetimer , .giveme10more{
 	font-size: 0.6em;
 	width: 55px;
 	height: 35px;
@@ -564,6 +564,10 @@ ol li:before {
 	top: 13%;
 	right: 10%;
 }
+
+.giveme10more{ left: 10%;}
+
+
 
 .progressbar {
 	margin: 0 auto;

@@ -114,6 +114,8 @@ function showProgress() {
 
 /*-- 1,5 COUNT DOWN TIMER -- */
 
+	
+
 const mySecond = 1000,
 	  myMinute = mySecond * 60,
 	  myHour = myMinute * 60,
@@ -131,11 +133,35 @@ let x2 = setInterval(function(){
 		document.querySelector('.myMinutes').innerText = Math.floor((myDistance % (myHour)) / (myMinute));
 		document.querySelector('.mySeconds').innerText = Math.floor((myDistance % (myMinute)) / mySecond);
 		
-		if (myDistance < (myMinute*10)){
-			alert("Only 10 minutes left. Time to head to the final step and check out");
-		}
+	
+	
+		//if (myDistance < (myMinute*10)){
+			//confirm("Only 10 minutes left.");
+			
+			//if (window.confirm){
+			//	myDistance + (myMinute * 10)
+			//}//
+			
+		//}
 
-		
+		/*function add10min {
+			(myDistance) + (myMinute*10);
+		}
+		*/
+	/*
+		if (giveMe10More() === true ) {
+			var newDistance = ((myDistance) + (myMinute*10));
+			console.log(newDistance)
+		}
+	*/
+	
+	/*
+	
+		if (myDistance = (myMinute*1)) {
+			//alert('Time to head to the next step')
+			console.log('Time to head to the next step')
+		}
+	*/
       	if (myDistance < 0) {
 			
 			document.querySelector('.myHours').innerText = 0;
@@ -144,7 +170,16 @@ let x2 = setInterval(function(){
 			
 		}
 	
+		
+	
 	}, mySecond)
+
+function giveMe10More(){
+	
+	console.log('hallååå')
+}
+
+
 
 /*-- HIDE TIMER -- */
 
