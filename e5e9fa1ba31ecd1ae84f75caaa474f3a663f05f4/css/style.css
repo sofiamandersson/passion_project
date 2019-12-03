@@ -364,12 +364,9 @@ footer .followme, footer .contactme {
 }
 
 .toolintro .actuallbody ul {
-    padding: 10px 0px 0px 70px;
+    padding: 10px 0px 28px 70px;
 }
 
-.toolintro .actuallbody ul li {
-    padding: 10px 0px;
-}
 /*---   TOOL PAGE  ---*/
 
 .firtssection {display: block;}
