@@ -122,7 +122,7 @@ const mySecond = 1000,
 	  myDay = myHour * 24;
 
 let myCurrentTime = new Date().getTime();
-let myCountDown = new Date(myCurrentTime + (myHour * 1.5)).getTime();
+let myCountDown = new Date(myCurrentTime + (myHour * 2)).getTime();
 
 let x2 = setInterval(function(){
 				
